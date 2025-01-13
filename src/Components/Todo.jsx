@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Todo = () => {
   const [input, setInput] = useState('');
@@ -15,7 +15,8 @@ const Todo = () => {
       setTodos([...todos, input]);
     }
     setInput(''); 
-  };
+    };
+    
 
   const handleEdit = (index) => {
     setInput(todos[index]); 
