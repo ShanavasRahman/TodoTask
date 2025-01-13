@@ -35,11 +35,11 @@ const Todo = () => {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           className="border border-gray-400 rounded px-2 py-1 w-full"
-          placeholder="Enter a todo"
+          placeholder="Enter todo"
         />
         <button
           onClick={handleAdd}
-          className="px-4 py-1 bg-blue-500 text-white rounded"
+          className="px-3 py-1 text-sm bg-neutral-500 text-white"
         >
           {editIndex !== null ? 'Update' : 'Add'}
         </button>
@@ -54,13 +54,13 @@ const Todo = () => {
             <div className="space-x-2">
               <button
                 onClick={() => handleEdit(index)}
-                className="px-3 py-1 text-sm bg-yellow-500 text-white "
+                className="px-3 py-1 text-sm bg-neutral-500 text-white "
               >
                 Edit
               </button>
               <button
                 onClick={() => handleDelete(index)}
-                className="px-3 py-1 text-sm bg-red-500 text-white"
+                className="px-3 py-1 text-sm bg-neutral-500 text-white"
               >
                 Delete
               </button>
