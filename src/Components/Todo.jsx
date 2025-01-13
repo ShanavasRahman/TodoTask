@@ -40,7 +40,7 @@ const Todo = () => {
         />
         <button
           onClick={handleAdd}
-          className="px-3 py-1 text-sm bg-neutral-500 text-white"
+          className="px-3 py-1 text-sm bg-neutral-500 text-white rounded-md"
         >
           {editIndex !== null ? 'Update' : 'Add'}
         </button>
@@ -55,13 +55,13 @@ const Todo = () => {
             <div className="space-x-2">
               <button
                 onClick={() => handleEdit(index)}
-                className="px-3 py-1 text-sm bg-neutral-500 text-white "
+                className="px-3 py-1 text-sm bg-yellow-500 text-white rounded-md"
               >
                 Edit
               </button>
               <button
                 onClick={() => handleDelete(index)}
-                className="px-3 py-1 text-sm bg-neutral-500 text-white"
+                className="px-3 py-1 text-sm bg-red-500 text-white rounded-md"
               >
                 Delete
               </button>
